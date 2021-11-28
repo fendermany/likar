@@ -4,7 +4,9 @@
 
 	&__column {}
 
-	&__line {}
+	&__line {
+		position: relative;
+	}
 
 	&__input {}
 
@@ -12,6 +14,8 @@
 
 	&__error {
 		color: red;
+		position: absolute;
+		left: 10px;
 	}
 }
 

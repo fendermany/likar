@@ -530,22 +530,15 @@
 		}
 
 		@media (min-width:$md3+px) {
-			display: grid;
-			gap: 40px;
 			justify-items: center;
 			grid-template: 1fr / 1fr 1fr;
-
-			&>*+* {
-				margin-top: 0;
-			}
-		}
-
-		@media (min-width:$md1+px) {
 			align-items: flex-start;
-			gap: 0;
 			display: flex;
 			flex-direction: row;
-
+			&>*+* {
+				margin-top: 0;
+				margin-left: 40px;
+			}
 		}
 	}
 
