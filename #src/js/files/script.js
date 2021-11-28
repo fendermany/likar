@@ -85,4 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			toggleMenu();
 		}
 	});
+
+	// Попап - специалисты
+
+	const specItems = document.querySelectorAll('.spec-p__item');
+
+	specItems.forEach(specItem => {
+		specItem.addEventListener('click', () => {
+			popup_close(specItem.closest('.popup'));
+		});
+	});
 });

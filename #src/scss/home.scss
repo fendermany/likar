@@ -201,6 +201,9 @@
 	&>*+* {
 		margin-left: 14px;
 	}
+	picture{
+		display: flex;
+	}
 }
 
 .value-text {
@@ -210,7 +213,10 @@
 	font-weight: 700;
 	font-size: 13px;
 	line-height: 17px;
+
 }
+
+
 
 .select-container {
 	width: 198px;
@@ -622,7 +628,7 @@
 		&:first-child {
 			justify-content: flex-end;
 
-			.why__item img {
+			.why__item img, .why__item picture {
 				order: 1;
 			}
 
@@ -715,6 +721,10 @@
 		position: relative;
 		grid-template: minmax(min-content, max-content) minmax(min-content, max-content) 100px / 280px;
 		column-gap: 20px;
+
+		picture{
+			display: contents;
+		}
 
 		&:last-child {
 			.how__img {

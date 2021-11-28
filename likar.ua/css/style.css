@@ -1457,6 +1457,12 @@ body.ie ._ibg img {
   margin-left: 14px;
 }
 
+.display-value picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .value-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1860,7 +1866,8 @@ body.ie ._ibg img {
           justify-content: flex-end;
 }
 
-.why__list:first-child .why__item img {
+.why__list:first-child .why__item img,
+.why__list:first-child .why__item picture {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -1949,6 +1956,10 @@ body.ie ._ibg img {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+
+.how__item picture {
+  display: contents;
 }
 
 .how__item:last-child .how__img {
