@@ -1,0 +1,100 @@
+//<FORM ()>====================================================================================================
+.form {
+	&__row {}
+
+	&__column {}
+
+	&__line {}
+
+	&__input {}
+
+	&__button {}
+
+	&__error {
+		color: red;
+	}
+}
+
+//</FORM>====================================================================================================
+
+//<BUTTONS (a.btn+tab)>====================================================================================================
+.button {
+	font-family: 'Futura';
+	font-weight: 700;
+	display: inline-flex;
+	align-items: center;
+	padding: 0px 0px;
+	background: $redColor;
+	box-shadow: 0px 2px 13px #E8D9D9;
+	border-radius: 10px;
+	height: 60px;
+	padding: 0 32px;
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #F7BCBC;
+		}
+	}
+
+	&:active{
+		background: #C83030;
+		color: #083147;
+	}
+
+	&__white{
+		border: 2px solid $redColor;
+		color: $mainColor;
+		background: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background: #fff;
+				border: 2px solid #F7BCBC;
+				color: #F7BCBC;
+			}
+		}
+		&:active{
+			border: 2px solid #083147;
+			color: #C83030;
+		}
+	}
+
+	&._fw {
+		width: 100%;
+	}
+}
+
+//</BUTTONS>====================================================================================================
+
+
+
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.input {
+	width: 100%;
+	display: block;
+	padding: 0px 20px;
+
+	&._focus {}
+
+	&._error {}
+}
+
+textarea.input {
+	resize: none;
+}
+

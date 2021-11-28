@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<section class="promo">
+				<div class="promo__container _container">
+					<div class="promo__title">Платформа для онлайн — приемов,<br> консультаций с детскими врачами и
+						педиатрами</div>
+					<div class="promo__subtitle">Свяжитесь с Вашим врачем или выберите нового в нашем каталоге</div>
+					<div class="promo__btns">
+						<a href="#" class="promo__btn button">Экспресс консультация с терапевтом</a>
+						<a href="#consultation" class="promo__btn button _popup-link">Экспресс консультация с педиатром</a>
+					</div>
+					<ul class="promo__list">
+						<li class="promo__list-item">
+							<div class="promo__list-number">24/7</div>
+							<div class="promo__list-descr">помощь и консультации</div>
+							<div class="promo__list-circle green"></div>
+						</li>
+						<li class="promo__list-item">
+							<div class="promo__list-number">600+</div>
+							<div class="promo__list-descr">педиатров</div>
+							<div class="promo__list-circle blue"></div>
+						</li>
+						<li class="promo__list-item">
+							<div class="promo__list-number">10 000+</div>
+							<div class="promo__list-descr">отзывов о врачах</div>
+							<div class="promo__list-circle purple"></div>
+						</li>
+					</ul>
+					<div class="promo__footer">
+						Все специалисты <span>Likar.ua</span> — это практикующие врачи, которые работают в частной практике
+						или в частных медицинских учреждениях Украины
+					</div>
+				</div>
+				<img src="img/block-promo.svg" alt="balls" class="promo__balls">
+			</section>
+			<section class="specialists">
+				<div class="specialists__container _container">
+					<div class="specialists__top">
+						<a href="#specialization" class="specialists__top-btn _popup-link">Выбрать специализацию врача</a>
+						<div class="specialists__sort select">
+							<input name="select_value" type="hidden" id="selectedValue">
+							<div class="display-value" id="displayValue">
+								<span class="value-text" id="valueText">Сортировать по</span>
+								<img src="img/arrow-down.svg" alt="arrow-down">
+							</div>
+							<ul tabindex="0" class="select-container" id="selectContainer">
+								<li class="select-option">имени</li>
+								<li class="select-option">стажу</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="specialists__list">
+						<li class="specialists__item specialist">
+							<div class="specialist__color pink"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color yellow"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color lightBlue"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color green"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color purple"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color lightYellow"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color lightDarkBlue"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__color grey"></div>
+							<img src="img/specialist.png" alt="specialist" class="specialist__photo">
+							<div class="specialist__body">
+								<div class="specialist__name">Савенкова Ирина Ивановна</div>
+								<div class="specialist__specialization">Детский нефролог, педиатр</div>
+								<div class="specialist__descr">
+									Стаж работы педиатром 32 года<br>
+									Детским нефрологом 18 лет
+								</div>
+								<a href="javascript:" class="specialist__btn">проконсультироваться с врачом</a>
+							</div>
+						</li>
+						<li class="specialists__item specialist">
+							<div class="specialist__dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+					</ul>
+					<a href="javascript:" class="specialists__more button">Показать больше</a>
+				</div>
+				<img class="specialists__balls1" src="img/block-specs-left.svg" alt="balls">
+				<img class="specialists__balls2" src="img/block-specs-center.svg" alt="balls">
+			</section>
+			<section class="principles">
+				<div class="principles__container _container">
+					<div class="principles__title title">Наши принципы</div>
+					<ul class="principles__list">
+						<li class="principles__item">
+							<img src="img/list-plus.svg" alt="principle">
+							<span>
+								Соблюдение протоколов доказательной медицины и новейших рекомендаций
+							</span>
+						</li>
+						<li class="principles__item">
+							<img src="img/pills.svg" alt="principle">
+							<span>
+								Отказ от назначения потенциально неэффективных препаратов
+							</span>
+						</li>
+						<li class="principles__item">
+							<img src="img/list-love.svg" alt="principle">
+							<span>
+								Эмпатия, помощь и поддержка родителям
+							</span>
+						</li>
+						<li class="principles__item">
+							<img src="img/micro.svg" alt="principle">
+							<span>
+								Индивидуальный подход к каждому маленькому пациенту
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__back"></div>
+				<div class="why__container _container">
+					<div class="why__title title">Почему выбирают нас?</div>
+					<div class="why__body">
+						<ul class="why__list">
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+						</ul>
+						<ul class="why__list">
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+							<li class="why__item">
+								<img src="img/li.svg" alt="li">
+								<span>Консультации нескольких специалистов на приёме</span>
+							</li>
+						</ul>
+					</div>
+					<img class="why__img" src="img/block-why.svg" alt="block-why-balls">
+				</div>
+			</section>
+			<section class="how">
+				<div class="how__container _container">
+					<div class="how__title title">Как это работает</div>
+					<ul class="how__list">
+						<li class="how__item">
+							<div class="how__number">1</div>
+							<div class="how__subtitle">Выберите врача</div>
+							<div class="how__descr">всегда доступного дежурного педиатра или врача из каталога</div>
+							<img class="how__img" src="img/next.svg" alt="how-next">
+						</li>
+						<li class="how__item">
+							<div class="how__number">2</div>
+							<div class="how__subtitle">Свяжитесь с ним в удобном формате</div>
+							<div class="how__descr">звонок или онлайн-чат</div>
+							<img class="how__img" src="img/next.svg" alt="how-next">
+						</li>
+						<li class="how__item">
+							<div class="how__number">3</div>
+							<div class="how__subtitle">Получите заключение</div>
+							<div class="how__descr">с рекомендациями и советами, как лечиться дальше</div>
+							<img class="how__img" src="img/next.svg" alt="how-next">
+						</li>
+						<li class="how__item">
+							<div class="how__number">4</div>
+							<div class="how__subtitle">Ваше заключение и запись приема будут сохранены в Вашем личном кабинете
+							</div>
+							<div class="how__descr"></div>
+							<img class="how__img" src="img/next.svg" alt="how-next">
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="feedback">
+				<div class="feedback__back"></div>
+				<div class="feedback__container _container">
+					<div class="feedback__title title">Запишитесь на прием</div>
+					<form action="/sendmail.php" method="post" data-ajax data-test data-message="thanks"
+						class="feedback__form">
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="name" data-error="Введите имя" data-value="Имя"
+								class="_req">
+						</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="phone" data-error="Введите номер" data-value="Телефон"
+								class="_req _phone">
+						</div>
+						<button type="submit" class="feedback__form-btn button">Записаться</button>
+					</form>
+				</div>
+				<img class="feedback__img" src="img/block-form.svg" alt="balls-form">
+			</section>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

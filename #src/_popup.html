@@ -1,0 +1,98 @@
+<div class="popup popup_dod dod">
+	<div class="popup__content dod__content">
+		<div class="popup__body dod__body">
+			<div class="dod__back"></div>
+			<div class="popup__close dod__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<ul class="dod__list">
+				<li class="dod__item">
+					<div class="dod__color dodBlue"></div>
+					<div class="dod__wrapper">
+						<a href="#" class="dod__btn button _fw">Оставить заявку</a>
+					</div>
+					<div class="dod__circle lightDarkBlue">
+						Дежурный терапевт
+					</div>
+				</li>
+				<li class="dod__item">
+					<div class="dod__color dodPink"></div>
+					<div class="dod__wrapper">
+						<a href="#" class="dod__btn button _fw">Оставить заявку</a>
+					</div>
+					<div class="dod__circle dodPink-circle">
+						Дежурный терапевт
+					</div>
+				</li>
+			</ul>
+			<img class="dod__img1" src="img/dod.svg" alt="dod-balls">
+			<img class="dod__img2" src="img/dod-2.svg" alt="dod-balls-top">
+		</div>
+	</div>
+</div>
+<div class="popup popup_specialization spec-p">
+	<div class="popup__content spec-p__content">
+		<div class="popup__body spec-p__body">
+			<div class="spec-p__back"></div>
+			<div class="popup__close spec-p__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<ul class="spec-p__list">
+				<li class="spec-p__item">Андролог</li>
+				<li class="spec-p__item">Венеролог</li>
+				<li class="spec-p__item">Вертебролог</li>
+				<li class="spec-p__item">Гинеколог</li>
+				<li class="spec-p__item">Гематолог</li>
+				<li class="spec-p__item">Гастроэнтеролог</li>
+				<li class="spec-p__item">Дерматолог</li>
+				<li class="spec-p__item">Кардиолог</li>
+				<li class="spec-p__item">Маммолог</li>
+				<li class="spec-p__item">Нейролог</li>
+				<li class="spec-p__item">Нейрохирург</li>
+				<li class="spec-p__item">Нефролог</li>
+				<li class="spec-p__item">Ортопед</li>
+				<li class="spec-p__item">Онколог</li>
+			</ul>
+			<img class="spec-p__img1" src="img/specialization.svg" alt="">
+			<img class="spec-p__img2" src="img/specialization-2.svg" alt="">
+		</div>
+	</div>
+</div>
+<div class="popup popup_consultation con-p">
+	<div class="popup__content con-p__content">
+		<div class="popup__body con-p__body">
+			<div class="con-p__back"></div>
+			<div class="popup__close con-p__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<div class="con-p__title">Запишитесь на консультацию</div>
+			<form method="post" data-ajax data-test data-message="thanks" action="/sendmail.php" class="con-p__form">
+				<div class="form__line">
+					<input autocomplete="off" type="text" name="name" data-error="Введите полное имя"
+						data-value="Фамилия и имя" class="input con-p__input _req">
+				</div>
+				<div class="form__line">
+					<input autocomplete="off" type="text" name="phone" data-error="Введите номер" data-value="Телефон"
+						class="input con-p__input _req _phone">
+				</div>
+				<div class="form__line">
+					<textarea data-gramm="false" autocomplete="off" name="msg" data-value="Опишите, пожалуйста, причину обращения к доктору"
+						data-error="Расскажите хоть что-нибудь" class="input con-p__input con-p__txt"></textarea>
+				</div>
+				<button type="submit" class="btn button con-p__btn">Отправить</button>
+			</form>
+			<img class="con-p__img1" src="img/form-consultation.svg" alt="con-balls">
+			<img class="con-p__img2" src="img/form-consultation-2.svg" alt="con-balls-2">
+		</div>
+	</div>
+</div>
+<div class="popup popup_thanks-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			Спасибо! Всё успешно
+		</div>
+	</div>
+</div>
